@@ -1,0 +1,19 @@
+{
+    "name": "vivek/automated-attendance",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Vivek Tadpatri",
+            "email": "vivekpisces23@gmail.com"
+        }
+    ],
+    "require": {
+        "phpoffice/phpspreadsheet": "^1.26",
+        "phpmailer/phpmailer": "^6.7"
+    },
+    "autoload": {
+        "files": [
+            "helpers/utility_functions.php"
+        ]
+    }
+}
