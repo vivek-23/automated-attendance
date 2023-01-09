@@ -78,6 +78,7 @@ try {
     $mail->Body    = '<p>Hi,</p><p>Attached is your '. date("F"). " ". date("Y"). " timesheet!</p>";
     $mail->send();
     echo "Mail sent successfully!";
+    unlink(__DIR__ . DIRECTORY_SEPARATOR . $fileName);
 } catch (Exception $e) {
     echo "Message could not be sent. Mailer Error: {$mail->ErrorInfo}";
 }
